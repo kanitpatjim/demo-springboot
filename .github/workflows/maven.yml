@@ -37,3 +37,12 @@ jobs:
       with:
         name: my-artifact
         path: target/bom.json
+        
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Submit Dependency Snapshot
+        uses: advanced-security/maven-dependency-submission-action@v3
+        with:
+          ignore-maven-wrapper: true

@@ -16,6 +16,18 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+	<distributionManagement>
+        <repository>
+            <id>changl0368</id>
+            <url>https://pkgs.dev.azure.com/changl0368/_packaging/changl0368/maven/v1</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+   	</distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
